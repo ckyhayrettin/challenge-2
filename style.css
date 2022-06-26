@@ -1,0 +1,223 @@
+:root {
+  --clr-family: 'Kumbh Sans', sans-serif;
+  --clr-fontsize: 1rem;
+  --clr-light-grayish-blue: #e7e7e9;
+  --clr-dark-grayish-blue: #787887;
+  --clr-Very-dark-grayish-blue: #4a4b5e;
+  --clr-Soft-violet: #af67e9;
+  --clr-Soft-blue: #6565e7;
+  --clr-Very-dark-desaturated-blue: #1d1e35;
+  --clr-Soft-red: #f47c57;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1440;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--clr-Soft-violet);
+}
+
+body .section {
+  width: 70%;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--clr-light-grayish-blue);
+  margin-top: 10vh;
+  border-radius: 10px;
+}
+
+body .section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section .container .images {
+  width: 50%;
+}
+
+body .section .container .images .box1 {
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body .section .container .images .box1 .img1 {
+  position: absolute;
+  left: -95%;
+  top: -60%;
+  width: 165%;
+  height: 185%;
+}
+
+body .section .container .images .box1 .img2 {
+  position: absolute;
+  left: -15%;
+  top: 10%;
+  width: 85%;
+  height: 75%;
+}
+
+body .section .container .images .box2 .img3 {
+  position: absolute;
+  left: 9%;
+  top: 41%;
+  width: 12%;
+  height: 22%;
+  overflow: visible !important;
+}
+
+body .section .container .images .box3 {
+  display: none;
+}
+
+body .section .container .images .box4 {
+  display: none;
+}
+
+body .section .container .content {
+  width: 50%;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+body .section .container .content .title {
+  font-weight: 700;
+  padding: 5px;
+}
+
+body .section .container .content .text-answer {
+  font-size: var(--clr-fontsize);
+  width: 90%;
+  height: auto;
+  padding: 5px;
+  margin-top: 1rem;
+  border-bottom: 2px solid;
+  border-color: var(--clr-dark-grayish-blue);
+}
+
+body .section .container .content .text-answer .text-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0px;
+}
+
+body .section .container .content .text-answer .text-head .text {
+  font-weight: 400;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .section .container .content .text-answer .text-head .text:hover {
+  color: var(--clr-Soft-red);
+}
+
+body .section .container .content .text-answer .text-head .fa-angle-down {
+  color: var(--clr-Soft-red);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+body .section .container .content .text-answer .answer {
+  display: none;
+}
+
+.text-on {
+  color: var(--clr-Very-dark-desaturated-blue);
+  font-weight: 700 !important;
+}
+
+.show-answer {
+  display: block !important;
+}
+
+.show-angle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 78%;
+  }
+  body .section {
+    width: 70%;
+    height: 73vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--clr-light-grayish-blue);
+    margin-top: 23vh;
+    border-radius: 10px;
+  }
+  body .section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section .container .images {
+    width: 100%;
+  }
+  body .section .container .images .box1 {
+    display: none;
+  }
+  body .section .container .images .box2 {
+    display: none;
+  }
+  body .section .container .images .box3 {
+    display: block;
+  }
+  body .section .container .images .box3 .img4 {
+    position: absolute;
+    left: 30%;
+    top: -2%;
+    width: 40%;
+    height: 40%;
+  }
+  body .section .container .images .box4 {
+    display: block;
+  }
+  body .section .container .images .box4 .img5 {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    width: 40%;
+    height: 30%;
+  }
+  body .section .container .content {
+    width: 100%;
+  }
+  body .section .container .content .title {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  body .section .container .content .text-answer {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
